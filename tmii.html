@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Taman Mini Indonesia Indah</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Rubik:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- Hero Section -->
+<section class="hero-full fade-element" style="background-image: url('assets/img/tmiihero.jpg')">
+  <div class="hero-content">
+    <h1 class="section-title">Taman Mini Indonesia Indah</h1>
+  </div>
+</section>
+
+    <!-- Navbar -->
+  <header class="navbar">
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="profil.html">FHDR</a></li>
+      <li><a href="tmii.html"class="active">TMII</a></li>
+      <li class="dropdown">
+        <a href="lkpd.html" aria-haspopup="true" aria-expanded="false">LKPD</a>
+        <ul class="dropdown-menu" aria-label="submenu">
+          <li><a href="lkpd/sejarah-pjok.html">Sejarah & PJOK</a></li>
+          <li><a href="lkpd/matematika.html">Matematika</a></li>
+          <li><a href="lkpd/pai.html">PAI</a></li>
+          <li><a href="lkpd/pai.html">Seni Musik</a></li>
+          <li><a href="lkpd/pp-mulok.html">PP & Mulok</a></li>
+          <li><a href="lkpd/ipas.html">IPAS</a></li>
+          <li><a href="lkpd/b-indonesia.html">B. Indonesia</a></li>
+          <li><a href="lkpd/rpl.html">RPL</a></li>
+          <li><a href="lkpd/informatika.html">Informatika</a></li>
+        </ul>
+      </li>
+      <li><a href="galeri.html">Galeri</a></li>
+      <li><a href="index.html#kontak">Kontak</a></li>
+    </ul>
+  </nav>
+</header>
+
+  
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const fadeElements = document.querySelectorAll('.fade-element');
+
+    const fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+        } else {
+          entry.target.classList.remove('fade-in'); // ⬅️ aktifkan fade-out
+        }
+      });
+    }, { threshold: 0.1 });
+
+    fadeElements.forEach(el => fadeObserver.observe(el));
+  });
+
+  function openModal(id) {
+  document.getElementById("modal-" + id).style.display = "block";
+}
+function closeModal(id) {
+  document.getElementById("modal-" + id).style.display = "none";
+}
+
+
+</script>
+
+  <div class="scroll-down fade-element">SCROLL</div>
+
+<section id="home" class="section-center fade-element">
+    <h2 class="section-title">Taman Mini Indonesia Indah</h2>
+    <p class="section-desc">Taman Mini Indonesia Indah (disingkat TMII; sebelumnya Taman Mini "Indonesia Indah" dengan tanda kutip) merupakan suatu taman hiburan bertemakan kebudayaan Indonesia, Sains, Astronomi, dan Teknologi di Jakarta Timur, DKI Jakarta, yang memiliki area seluas kurang lebih 147 hektare[1] atau 1,47 kilometer persegi. Taman ini merupakan rangkuman kebudayaan bangsa Indonesia, yang mencakup berbagai aspek kehidupan sehari-hari masyarakat 26 provinsi Indonesia (pada tahun 1975) yang ditampilkan dalam anjungan daerah berarsitektur tradisional, serta menampilkan aneka busana, tarian, dan tradisi daerah. Di samping itu, di tengah-tengah TMII terdapat sebuah danau yang menggambarkan miniatur kepulauan Indonesia di tengahnya yang juga menjadi tempat pertunjukkan multimedia show dengan satu-satunya permanent drone show di Asia Tenggara bernama Tirta Cerita, kereta gantung, berbagai museum, dan Teater Keong Emas dan Teater Tanah Airku, berbagai sarana rekreasi ini menjadikan TMII sebagai salah satu kawasan wisata terkemuka di Jakarta.[2]
+</p>
+  </section>
+
+  <!-- Sejarah TMII -->
+<section class="section-imgtext fade-element">
+  <div class="img-left">
+    <img src="assets/img/tmii-sejarah.jpg" alt="Sejarah TMII">
+  </div>
+  <div class="text-right section-desc">
+    <h3 class="subbab-title">Sejarah TMII</h3>
+    <p>
+      Gagasan pembangunan miniatur Indonesia dicetuskan oleh Ibu Tien Soeharto pada 13 Maret 1970, terinspirasi dari pidato Presiden Soeharto dan pengalamannya saat mengunjungi negara lain. Ia menginginkan taman yang dapat menggambarkan keindahan dan keberagaman Indonesia, sehingga membangkitkan rasa cinta tanah air.
+    </p>
+    <p>
+      Proyek ini dinamakan Miniatur “Indonesia Indah” dan dibangun oleh Yayasan Harapan Kita. TMII mulai dibangun tahun 1972 dan diresmikan pada 20 April 1975. Dengan luas 150 hektare dan lanskap yang berbukit, TMII merepresentasikan lingkungan hidup yang beragam di Indonesia.
+    </p>
+    <p>
+      Setelah sekian lama dikelola Yayasan Harapan Kita, pada tahun 2021 TMII diambil alih oleh Kementerian Sekretariat Negara dan kemudian dikelola oleh PT. Taman Wisata Candi Borobudur (anak usaha InJourney).
+    </p>
+    <p>
+      TMII direvitalisasi sejak 2022 dengan konsep “Indonesia Opera” untuk menegaskan kembali jati diri TMII sebagai sinopsis kekayaan budaya Indonesia. 70% areanya kini berupa ruang hijau dan TMII menjadi kawasan rendah emisi. Transportasi pribadi dilarang, digantikan oleh kendaraan ramah lingkungan.
+    </p>
+    <p>
+      TMII resmi dibuka kembali akhir 2022, dan revitalisasi ini diresmikan oleh Presiden Joko Widodo pada 1 September 2023 dengan total anggaran mencapai Rp 1,9 triliun.
+    </p>
+  </div>
+</section>
+
+<section class="section-imgtext reverse fade-element">
+  <div class="img-right">
+    <img src="assets/img/anjungan-tmii.jpg" alt="Anjungan Daerah TMII">
+  </div>
+  <div class="text-left">
+    <h3 class="subbab-title">Anjungan Daerah</h3>
+    <p>
+      Di Indonesia, hampir setiap suku bangsa memiliki bentuk dan corak bangunan yang berbeda. Bangunan tradisional ini dipengaruhi oleh lingkungan dan kebudayaan masing-masing daerah.
+      Di TMII, keberagaman ini diwujudkan melalui <strong>Anjungan Daerah</strong> yang mewakili seluruh 34 provinsi Indonesia, terletak mengelilingi miniatur Danau Kepulauan.
+    </p>
+    <p>
+      Setiap anjungan menampilkan bangunan adat, pakaian tradisional, senjata, perabot rumah tangga, kerajinan tangan, dan informasi kebudayaan lainnya. Tak hanya itu, anjungan juga dilengkapi panggung atau auditorium untuk menampilkan tari-tarian, pertunjukan musik, dan upacara adat.
+    </p>
+    <p>
+      Beberapa anjungan menyediakan makanan khas daerah dan toko suvenir yang menjual cenderamata lokal. Penataan kawasan dibagi ke dalam zona budaya: Jawa, Sumatra, Kalimantan, Sulawesi, Bali-Nusa Tenggara, serta Maluku dan Papua.
+    </p>
+    <p>
+      Rancangan awal tahun 1975 mencakup 27 provinsi (termasuk Timor Timur), yang kemudian menjadi Museum Timor Timur setelah kemerdekaan Timor Leste. Seiring waktu, anjungan baru ditambahkan untuk provinsi hasil pemekaran seperti Bangka Belitung, Banten, Gorontalo, dan lainnya, meskipun berukuran lebih kecil.
+    </p>
+  </div>
+</section>
+
+<section class="section-center fade-element">
+  <h2 class="section-title">Wahana & Fasilitas di TMII</h2>
+
+  <!-- 1. Wahana Rekreasi -->
+  <div class="zona-box fade-element">
+    <img src="assets/img/wahana.jpg" class="zona-img" alt="Wahana Rekreasi">
+    <h3 class="subbab-title">Wahana Rekreasi</h3>
+    <p class="zona-desc">
+      Wahana rekreasi TMII menghadirkan berbagai fasilitas hiburan yang seru dan edukatif. Mulai dari Kereta Gantung yang memberikan pemandangan TMII dari atas, hingga Taman Legenda, Dunia Air Tawar, dan Taman Dinosaurus yang jadi favorit anak-anak.
+    </p>
+    <button class="zona-button" onclick="openModal('rekreasi')">Lihat Selengkapnya</button>
+  </div>
+
+  <!-- 2. Bangunan Keagamaan -->
+  <div class="zona-box fade-element">
+    <img src="assets/img/keagamaan.jpg" class="zona-img" alt="Bangunan Keagamaan">
+    <h3 class="subbab-title">Bangunan Keagamaan</h3>
+    <p class="zona-desc">
+      TMII memiliki tempat ibadah dari 6 agama resmi di Indonesia. Di antaranya Masjid Pangeran Diponegoro, Gereja Protestan & Katolik, Pura Agung, Vihara Arya Dwipa Arama, serta Kelenteng Kong Miao — simbol kerukunan umat beragama di Indonesia.
+    </p>
+    <button class="zona-button" onclick="openModal('agama')">Lihat Selengkapnya</button>
+  </div>
+
+  <!-- 3. Museum -->
+  <div class="zona-box fade-element">
+    <img src="assets/img/museum.jpg" class="zona-img" alt="Museum">
+    <h3 class="subbab-title">Museum</h3>
+    <p class="zona-desc">
+      TMII menjadi rumah bagi lebih dari 15 museum tematik. Mulai dari Museum Indonesia, Museum Transportasi, Museum Komodo & Reptil, Museum Pusaka, hingga Museum IPTEK. Setiap museum menampilkan warisan budaya dan ilmu pengetahuan Nusantara.
+    </p>
+    <button class="zona-button" onclick="openModal('museum')">Lihat Selengkapnya</button>
+  </div>
+
+  <!-- 4. Taman & Teater -->
+  <div class="zona-box fade-element">
+    <img src="assets/img/taman.jpg" class="zona-img" alt="Taman & Teater">
+    <h3 class="subbab-title">Taman & Teater</h3>
+    <p class="zona-desc">
+      Nikmati suasana rindang di berbagai taman tematik seperti Taman Burung, Taman Anggrek, dan Taman Bunga. TMII juga punya teater budaya seperti Teater Tanah Airku dan panggung terbuka yang rutin menggelar seni pertunjukan.
+    </p>
+    <button class="zona-button" onclick="openModal('taman')">Lihat Selengkapnya</button>
+  </div>
+</section>
+
+<!-- Modal: Wahana Rekreasi -->
+<div id="modal-rekreasi" class="zona-modal">
+  <div class="zona-modal-content">
+    <span class="close-btn" onclick="closeModal('rekreasi')">&times;</span>
+    <h3>Wahana Rekreasi</h3>
+    <p>
+      TMII memiliki berbagai wahana rekreasi yang tidak hanya menyenangkan tetapi juga bersifat edukatif, sehingga cocok untuk pengunjung segala usia. Salah satu wahana yang populer adalah Kereta Gantung yang menawarkan pengalaman unik melihat seluruh kawasan TMII dari ketinggian, memberikan perspektif berbeda tentang luas dan keindahan taman budaya ini. Selain itu, terdapat Istana Anak-anak Indonesia, tempat bermain dan belajar yang dirancang khusus untuk mengasah kreativitas dan imajinasi anak-anak dalam suasana yang aman dan nyaman. 
+    </p>
+    <p>
+      Di kawasan TMII juga terdapat Contemporary Art Gallery (CAG), sebuah galeri seni kontemporer yang melengkapi koleksi seni tradisional TMII dengan karya seni modern dan inovatif. Galeri ini tak hanya memamerkan karya seni, tetapi juga menyediakan toko cenderamata resmi yang bisa dijadikan oleh-oleh khas TMII. Pengunjung yang ingin menikmati suasana santai bisa berkunjung ke Danau Archipelago, yang merupakan miniatur gugusan pulau Indonesia lengkap dengan pulau-pulau buatan dan dihiasi lampu LED warna-warni yang menambah pesona. Di sini juga ada pertunjukan air mancur menari bernama Tirta Menari, yang dilengkapi dengan aransemen lagu nasional dan daerah, serta multimedia show Tirta Cerita yang merupakan perpaduan seni, teknologi, dan legenda Nusantara, dengan pertunjukan drone LED spektakuler sebagai daya tarik utamanya. 
+    </p>
+    <p>
+      Taman Legenda Keong Mas menghadirkan wahana permainan anak-anak, patung dinosaurus animatronik yang mengagumkan, dan wahana air yang menyegarkan. Sementara itu, Menara Pandang Saujana yang baru dibangun memberikan kesempatan bagi pengunjung untuk menikmati pemandangan luas Danau Archipelago dan sekitarnya dari ketinggian. TMII juga memiliki berbagai taman tematik seperti Taman Burung, Taman Anggrek, dan Dunia Air Tawar serta Dunia Serangga yang berfungsi sebagai pusat edukasi tentang flora dan fauna khas Indonesia, membuat kunjungan menjadi pengalaman belajar yang interaktif dan menyenangkan. 
+    </p>
+    <p>
+      Selain wahana rekreasi dan taman, TMII menyuguhkan berbagai panggung budaya dan teater, seperti Panggung Budaya dan Teater Tanah Airku, yang rutin menggelar pertunjukan seni tradisional dan modern. Desa Wisata yang ada di dalam kawasan juga memperkaya pengalaman pengunjung dengan kegiatan budaya dan kerajinan tangan khas daerah-daerah di Indonesia. Semua wahana dan fasilitas ini dirancang dengan tujuan utama menggabungkan unsur hiburan, pendidikan, dan pelestarian budaya, sehingga TMII menjadi destinasi rekreasi sekaligus tempat belajar yang lengkap dan menyenangkan bagi seluruh keluarga.
+    </p>
+  </div>
+</div>
+
+<!-- Modal: Bangunan Keagamaan -->
+<div id="modal-agama" class="zona-modal">
+  <div class="zona-modal-content">
+    <span class="close-btn" onclick="closeModal('agama')">&times;</span>
+    <h3>Bangunan Keagamaan</h3>
+    <p>
+      Taman Mini Indonesia Indah (TMII) secara unik dan indah menghadirkan miniatur bangunan keagamaan dari berbagai agama yang dianut masyarakat Indonesia. Di sini, pengunjung dapat menemukan Masjid Pangeran Diponegoro, sebuah masjid megah yang menjadi pusat ibadah dan sekaligus menunjukkan kekayaan arsitektur Islam Nusantara dengan ornamen khas yang elegan dan desain kubah yang menawan. Tidak jauh dari situ, terdapat Gereja Katolik dan Gereja Protestan yang masing-masing menampilkan gaya arsitektur kolonial dan Eropa klasik, yang memperlihatkan sejarah penyebaran agama Kristen di Indonesia. 
+    </p>
+    <p>
+      Selain itu, TMII juga memajang Pura yang menggambarkan warisan budaya Hindu Bali dengan ukiran batu yang rumit dan simbol-simbol keagamaan yang sarat makna. Vihara di kawasan ini menghadirkan suasana damai dengan patung Buddha yang megah dan detail ornamen Tionghoa yang kaya warna, sedangkan Kelenteng menjadi pusat kegiatan umat Konghucu yang penuh dengan lampion merah dan ukiran tradisional yang memesona. Masing-masing bangunan ini didirikan dengan sangat detail dan autentik, memungkinkan pengunjung merasakan nuansa asli dan kekayaan spiritual dari setiap agama.
+    </p>
+    <p>
+      Fungsi bangunan-bangunan ini tidak hanya sebagai objek wisata, tetapi juga sebagai tempat aktif kegiatan keagamaan, seperti salat, misa, persembahyangan, dan ritual adat yang secara rutin diselenggarakan. Ini menjadikan TMII bukan hanya sebagai tempat rekreasi, tetapi juga pusat pembelajaran spiritual dan budaya. Sekolah dan lembaga pendidikan sering mengadakan kunjungan edukasi ke sini untuk mengenalkan anak-anak dan generasi muda pada pentingnya toleransi dan penghargaan terhadap perbedaan keyakinan di Indonesia.
+    </p>
+    <p>
+      Lebih dari itu, keberadaan bangunan keagamaan ini juga menjadi simbol persatuan dan harmoni di tengah keberagaman. TMII mengajarkan bahwa keberagaman agama bukanlah penghalang untuk hidup bersama secara damai, melainkan kekayaan yang harus dijaga dan dirayakan. Melalui interaksi sosial di tempat ini, pengunjung dapat belajar tentang nilai-nilai toleransi, penghormatan antarumat beragama, serta bagaimana menjaga kerukunan dalam kehidupan berbangsa dan bernegara sesuai dengan semboyan Bhineka Tunggal Ika.
+    </p>
+  </div>
+</div>
+
+<!-- Modal: Museum -->
+<div id="modal-museum" class="zona-modal">
+  <div class="zona-modal-content">
+    <span class="close-btn" onclick="closeModal('museum')">&times;</span>
+    <h3>Museum di TMII</h3>
+    <p>
+      Taman Mini Indonesia Indah (TMII) menjadi pusat edukasi dan pelestarian warisan budaya, sejarah, dan ilmu pengetahuan dengan keberadaan lebih dari 15 museum yang beragam. Setiap museum menyajikan koleksi unik yang menggambarkan kekayaan Nusantara dari berbagai aspek, mulai dari tradisi budaya hingga perkembangan teknologi modern.  
+    </p>
+    <p>
+      Salah satu museum utama adalah Museum Indonesia yang berarsitektur khas Bali, menyimpan artefak-artefak bersejarah serta benda-benda budaya dari seluruh provinsi di Indonesia. Koleksi di sini mencakup pakaian adat, alat musik tradisional, seni ukir, dan berbagai peralatan rumah tangga tradisional yang menggambarkan kekayaan kearifan lokal yang tersebar di penjuru negeri. Selain itu, ada Museum Purna Bhakti Pertiwi yang atapnya berbentuk tumpeng, simbol penghormatan terhadap perjuangan bangsa, yang memamerkan benda-benda peninggalan sejarah perjuangan dan kemerdekaan Indonesia.
+    </p>
+    <p>
+      TMII juga memiliki Museum Transportasi yang memamerkan berbagai jenis kendaraan dari masa ke masa, mulai dari kendaraan tradisional seperti dokar dan becak, hingga kendaraan modern seperti mobil klasik dan kereta api yang pernah digunakan di Indonesia. Di sini, pengunjung dapat memahami evolusi transportasi yang sangat berperan dalam perkembangan sosial dan ekonomi bangsa.  
+    </p>
+    <p>
+      Selain itu, Museum Komodo menghadirkan satwa langka Komodo dan fauna Indonesia Timur yang dilengkapi dengan informasi edukatif mengenai habitat dan upaya pelestariannya. Ada pula Museum IPTEK (Ilmu Pengetahuan dan Teknologi) yang menampilkan inovasi dan perkembangan teknologi di Indonesia, mulai dari teknologi sederhana hingga yang tercanggih, memberikan inspirasi bagi pengunjung dari segala usia.
+    </p>
+    <p>
+      Koleksi museum lainnya meliputi Museum Minyak dan Gas Bumi yang menjelaskan sejarah eksplorasi dan pemanfaatan sumber daya alam Indonesia, Museum Telekomunikasi yang merekam perjalanan teknologi komunikasi dari masa ke masa, serta Museum Pusaka yang menyimpan benda-benda pusaka bersejarah yang menjadi saksi perjalanan bangsa.  
+    </p>
+    <p>
+      Semua museum di TMII didesain dengan konsep interaktif yang memudahkan pengunjung untuk belajar sambil mengalami langsung berbagai pameran melalui visualisasi multimedia, maket, dan diorama yang menarik. Ini menjadikan kunjungan ke museum-museum di TMII tidak hanya sebagai wisata budaya, tetapi juga sebagai pengalaman pembelajaran yang menyenangkan dan mendalam, khususnya bagi pelajar dan keluarga.  
+    </p>
+    <p>
+      Melalui keberadaan museum-museum ini, TMII berperan sebagai pusat penguatan identitas nasional dan sarana pelestarian warisan budaya bangsa, sekaligus menghubungkan masa lalu dengan masa kini dan masa depan Indonesia yang terus berkembang. Dengan demikian, setiap langkah kaki di museum TMII menjadi perjalanan penuh pengetahuan dan kebanggaan akan keanekaragaman Indonesia.
+    </p>
+  </div>
+</div>
+
+<!-- Modal: Taman dan Teater -->
+<div id="modal-taman" class="zona-modal">
+  <div class="zona-modal-content">
+    <span class="close-btn" onclick="closeModal('taman')">&times;</span>
+    <h3>Taman dan Teater</h3>
+    <p>
+      TMII memiliki koleksi taman tematik yang sangat beragam, menampilkan kekayaan flora dan fauna Indonesia dari berbagai daerah. Di antaranya adalah Taman Anggrek yang memamerkan ratusan varietas anggrek yang langka dan indah, serta Taman Apotek Hidup yang berisi tanaman obat tradisional yang digunakan dalam pengobatan herbal nusantara. Ada pula Taman Kaktus dengan berbagai jenis kaktus eksotis, serta Taman Melati dan Taman Bunga Keong Mas yang menyuguhkan keindahan bunga-bunga khas Indonesia dalam suasana yang asri dan nyaman.
+    </p>
+    <p>
+      Dunia Air Tawar dan Dunia Serangga merupakan wahana edukatif yang menghadirkan beragam spesies fauna air tawar dan serangga endemik Indonesia, memberikan kesempatan bagi pengunjung untuk mengenal dan mempelajari keanekaragaman hayati secara interaktif. Taman Burung dan Taman Reptil menampilkan koleksi burung dan reptil yang dilindungi, sehingga pengunjung dapat melihat langsung berbagai jenis satwa yang selama ini hanya diketahui lewat buku atau media digital. Selain itu, Taman Budaya Tionghoa Indonesia menampilkan elemen kebudayaan Tionghoa melalui taman yang dirancang dengan sentuhan estetika oriental.
+    </p>
+    <p>
+      Di samping taman-taman yang menyejukkan ini, TMII juga memiliki beberapa teater yang menjadi pusat hiburan dan edukasi budaya. Teater Tanah Airku adalah salah satu teater utama yang kerap menampilkan pertunjukan seni tradisional, tari, dan drama yang merepresentasikan keanekaragaman budaya Indonesia. Sementara itu, Teater Keong Emas dikenal sebagai bioskop IMAX pertama di Indonesia dengan layar raksasa, yang memutar berbagai film bertema lingkungan, kebudayaan, dan dokumenter berkualitas tinggi, serta film box office yang diadaptasi khusus untuk pengalaman visual maksimal.
+    </p>
+    <p>
+      Kedua teater ini tidak hanya menghibur tetapi juga berfungsi sebagai media pendidikan dan pelestarian seni budaya, di mana pengunjung dari berbagai usia dapat menikmati sekaligus belajar mengenai sejarah, nilai budaya, dan lingkungan hidup Indonesia. Pertunjukan-pertunjukan di teater ini sering diselenggarakan dengan teknologi canggih dan konsep artistik yang inovatif, menjadikan TMII sebagai destinasi yang lengkap antara edukasi, rekreasi, dan budaya.
+    </p>
+  </div>
+</div>
+
+<section id="kunjung"></section>
+<section class="section-center fade-element">
+  <h2 class="section-title">Tempat Yang Dikunjungi</h2>
+
+<div class="zigzag-container">
+  <div class="zigzag-row">
+    <a href="anjungan-ntb.html" class="zigzag-card full">
+      <img src="assets/img/anjungan-ntb.jpg" alt="Anjungan NTB">
+      <div class="zigzag-text">
+        <h3>Anjungan NTB</h3>
+        <p>Menampilkan budaya khas Nusa Tenggara Barat dengan rumah adat dan pertunjukan tradisional.</p>
+      </div>
+    </a>
+    <a href="museum-asmat.html" class="zigzag-card full">
+      <img src="assets/img/konten1.jpg" alt="Museum Asmat">
+      <div class="zigzag-text">
+        <h3>Museum Asmat</h3>
+        <p>Koleksi seni dan budaya suku Asmat dari Papua yang unik dan berkarakter kuat.</p>
+      </div>
+    </a>
+  </div>
+
+  <div class="zigzag-row bottom-row fade-element">
+    <a href="anjungan-jatim.html" class="zigzag-card wide">
+      <img src="assets/img/anjungan-jatim.jpg" alt="Anjungan Jawa Timur">
+      <div class="zigzag-text">
+        <h3>Anjungan Jawa Timur</h3>
+        <p>Merangkum ragam budaya dan arsitektur khas dari berbagai daerah di Jawa Timur.</p>
+      </div>
+    </a>
+  </div>
+</div>
+
+<section id="home" class="section-center fade-element">
+    <h2 class="section-title">THE JOURNEY</h2>
+    <p class="section-desc">Outing class bukan sekadar kegiatan belajar di luar kelas, tetapi sebuah pengalaman yang mendalam yang mampu merangsang pemahaman, kreativitas, dan nilai-nilai sosial dalam diri peserta didik. Kegiatan ini membuka peluang bagi kami untuk melihat dunia secara langsung, berinteraksi dengan lingkungan, dan menemukan makna baru dari ilmu yang dipelajari.
+Salah satu destinasi yang menjadi pilihan populer untuk outing class adalah Taman Mini Indonesia Indah (TMII). Sebagai taman wisata budaya yang mencerminkan kekayaan Indonesia dari Sabang hingga Merauke, TMII menjadi tempat ideal bagi kami untuk memahami lebih dalam tentang keberagaman suku, adat istiadat, serta warisan budaya yang ada di tanah air. Dengan menghadirkan miniatur rumah adat dari berbagai daerah, museum bertema sejarah dan sains, serta wahana edukatif, TMII bukan sekadar tempat wisata, tetapi juga laboratorium budaya yang memungkinkan kami belajar secara kontekstual dan menyeluruh.
+</p>
+  </section>
+
+<section class="story-section">
+  <div class="story-content">
+    <img src="assets/img/awal1.jpg" alt="Anjungan Jawa Timur" class="img-left">
+    <p>
+      Pada hari Kamis, 22 Mei 2025, kami para siswa-siswi SMK Negeri 8 Jakarta melaksanakan kegiatan Outing Class ke Taman Mini Indonesia Indah (TMII). Kegiatan ini menjadi kesempatan bagi kami untuk belajar tidak hanya di dalam kelas, tetapi juga melalui interaksi langsung dengan lingkungan, sejarah, dan budaya Indonesia. Sejak pagi, kami telah bersiap di lapangan sekolah, melakukan absensi hingga pemeriksaan denyut nadi sebagai bagian dari rutinitas kesehatan. Saat itu, denyut nadi saya tercatat 86 kali per menit dalam kondisi istirahat.
+    </p>
+    <p>
+      SMK Negeri 8 Jakarta sendiri terletak di Pejaten Barat, Pasar Minggu, Jakarta Selatan. Sekolah ini sebelumnya dikenal sebagai SMEA Negeri 4 Jakarta, yang merupakan afiliasi dari SMEA Negeri 3 Jakarta di Kebayoran Baru. Kami memulai perjalanan dengan bus dari sekolah, melintasi Jalan Pejaten — yang dinamai dari pahlawan nasional D.I. Pandjaitan — kemudian melewati Jalan Warung Jati Barat, yang memiliki nilai historis karena dulu menjadi tempat istirahat para musafir di bawah pohon-pohon jati. Rute kami berlanjut ke Jalan TB Simatupang, dinamai dari pahlawan nasional Tahi Bonar Simatupang, melewati berbagai gedung penting seperti Kementerian Pertanian dan Kantor Pajak, hingga akhirnya masuk ke Tol Lenteng Agung yang merupakan bagian dari Tol Depok-Antasari.
+    </p>
+    <p class="section-desc">
+      Di sepanjang perjalanan, suasana bus dipenuhi obrolan antar peserta dan penjelasan dari tour guide mengenai tempat-tempat bersejarah yang kami lewati. Saat waktu senggang, saya kembali menghitung denyut nadi saya dan mendapat hasil 72 denyut per menit. Tak lama kemudian, kami sempat melewati The Park Pejaten — pusat perbelanjaan yang dahulu dikenal sebagai Pejaten Mall dan Pejaten Village. Tempat ini mengalami renovasi besar-besaran dan resmi berganti nama menjadi The Park Pejaten pada 16 Agustus 2024, bertepatan dengan peringatan Hari Kemerdekaan Republik Indonesia.
+    </p>
+    <p>
+      Setibanya di TMII, kami memulai eksplorasi dari Tugu Api, simbol semangat persatuan bangsa. Dari sana, kami berjalan sejauh 500 meter atau sekitar 670 langkah menuju tujuan pertama. Selama perjalanan tersebut, saya menghitung denyut nadi dan mencatat hasil sebanyak 129 denyut per menit. TMII adalah tempat istimewa bagi pelajar untuk mengenal kekayaan budaya Nusantara. Tempat ini menghadirkan berbagai rumah adat, museum, anjungan daerah, taman tematik, hingga wahana edukatif yang merepresentasikan ragam budaya Indonesia secara menyeluruh.
+    </p>
+    <img src="assets/img/awal2.jpg" alt="Museum Asmat" class="img-right">
+    <p>
+      Dalam kunjungan kali ini, kami secara khusus mengeksplorasi Anjungan Jawa Timur dan Nusa Tenggara Barat. Kedua provinsi ini menyimpan sejarah yang kaya serta tradisi yang mencerminkan filosofi kehidupan masyarakat setempat. Outing class ini menjadi pengalaman yang sangat berarti bagi kami, bukan hanya memperkaya wawasan, tetapi juga mempererat rasa cinta terhadap budaya bangsa.
+    </p>
+  </div>
+</section>
+
+
+<section class="story-section">
+  <div class="story-content">
+    <img src="assets/img/akhir1.jpg" alt="Anjungan Jawa Timur" class="img-right">
+    <p>
+      Setibanya di TMII, kami berangkat dari tugu api menuju tujuan pertama kami, perjalanan dari tugu api memakan jarak 500 meter dan 670 langkah. Pada akhirnya kami sampai menuju ke tujuan pertama kami yaitu Anjungan Jawa Timur. Kami tiba di Anjungan Jawa Timur, sebelumnya kami melewati berbagai Tempat Ibadah, dari Tempat Ibadah ke Anjungan Sumatera Selatan kami berjalan sebanyak 700 langkah dengan jarak 500 meter, dan ketika saya mengukur denyut nadi saya. Setibanya, kami disambut oleh dua buah patung, Kotbuto dan Angkobuto, dua buah patung ini dikenal sebagai simbol kesetiaan, keberanian, dan kekuatan militer dalam sejarah Jawa Timur. Dua patih kembar atau dua patung ini legendaris dari Kerajaan Blambangan pada masa pemerintahan Prabu Menak Jinggo. Tradisi Larung Sesaji, yang masih dipraktikkan hingga kini, memiliki makna yang lebih dari sekadar kebiasaan. Ia adalah simbol rasa syukur kepada laut, permohonan keselamatan nelayan, dan keharmonisan antara manusia dengan alam. Namun, bukan hanya budaya yang menjadikan Jawa Timur begitu istimewa — warisan spiritualnya juga memegang peran penting. Salah satunya adalah Replika Menara Masjid Ampel, yang menjadi simbol penyebaran Islam di tanah Jawa. Menara ini bukan sekadar bangunan, tetapi juga penanda perjalanan sejarah dakwah Wali Songo, khususnya Sunan Ampel, dalam membangun peradaban Islam di Nusantara. Keberadaannya mencerminkan bahwa warisan keagamaan turut membentuk identitas sosial dan budaya masyarakat Jawa Timur hingga kini.
+    </p>
+
+    <img src="assets/img/akhir2.jpg" alt="Museum Asmat" class="img-left">
+    <p>
+      Setelah dari Anjungan Jawa Timur, kami melanjutkan perjalanan ke Museum Asmat, sebelum sampai saya menghitung langkah kaki saya sebanyak 267 langkah, jarak 200 meter. Museum Asmat ini bukan sekadar tempat menyimpan artefak bersejarah, tetapi juga jendela yang membuka wawasan kita terhadap warisan budaya. Salah satu destinasi edukatif yang menarik dalam outing class di Taman Mini Indonesia Indah (TMII) adalah Museum Asmat, yang menyimpan beragam peninggalan bersejarah, termasuk topeng, patung, perisai, dan perlengkapan upacara adat. Museum ini menjadi ruang eksplorasi yang memperkenalkan kami pada kesenian dan nilai spiritual masyarakat Asmat, serta filosofi yang tertanam dalam setiap karya yang diwariskan.
+      <br><br>
+      Perjalanan kami berlanjut ke Anjungan Nusa Tenggara Barat, kami berjalan dari Museum Asmat ke Anjungan Nusa Tenggara Barat berjalan sebanyak 300 langkah, dengan jarak 400 meter. Anjungan Nusa Tenggara Barat adalah tempat yang penuh dengan makna filosofis dalam setiap detail arsitekturnya. Kami terkesima oleh bangunan replika Istana Dalam Loka dari Sumbawa, yang seluruhnya terbuat dari kayu dan berdiri kokoh di atas 100 tiang. Istana ini bukan hanya simbol kekuasaan, tetapi juga mencerminkan struktur sosial dan nilai-nilai kehidupan masyarakat Samawa. Tidak hanya itu, Anjungan ini menampilkan kain tenun ikat khas Lombok dan Sumbawa yang sarat makna. Kami juga melihat pertunjukan Gendang Beleq, musik tradisional untuk upacara adat dan penyambutan tamu. Dentuman gendang dan gerakan penari menjadi simbol semangat dan penghormatan terhadap tradisi. Di balik semua itu, tersimpan filosofi dan identitas budaya yang terus diwariskan.
+    </p>
+  </div>
+</section>
+
+
+<footer class="fhdr-footer">
+  <div class="footer-content fade-element">
+    <p>© 2025 <strong>Proyek TMII FHDR</strong> — Menjelajahi Budaya Indonesia dengan Teknologi</p>
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="profil.html">FHDR</a>
+        <a href="tmii.html">TMII</a>
+        <a href="lkpd.html">LKPD</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="index.html#kontak">Kontak</a>
+    </div>
+  </div>
+</footer>
+
+
