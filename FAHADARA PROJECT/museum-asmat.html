@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Museum Asmat - Taman Mini Indonesia Indah</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4faff;
+      color: #222;
+      line-height: 1.9;
+    }
+
+    header {
+      background: #e0f3ff;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.4rem;
+      color: #0b3d91;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      color: #0b3d91;
+      margin-bottom: 1rem;
+    }
+
+    .img-container {
+      width: 100%;
+      margin: 1.5rem 0;
+      text-align: center;
+    }
+
+    .img-container img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    p {
+      text-align: justify;
+      margin-bottom: 1.2rem;
+    }
+
+    footer {
+      background-color: #e0f3ff;
+      text-align: center;
+      padding: 1.5rem;
+      color: #555;
+      font-size: 0.9rem;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 80px;
+      background: transparent;
+      padding: 0 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1000;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      transition: top 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .navbar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .navbar ul li {
+      position: relative;
+    }
+
+    .navbar ul li ul.dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      padding: 0.5rem 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      background: transparent;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1000;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      transition: top 0.3s ease;
+    }
+
+    .navbar ul li:hover > ul.dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu li {
+      padding: 0.5rem 1rem;
+      white-space: nowrap;
+    }
+
+    .dropdown-menu li a {
+      color: black;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-menu li a:hover {
+      background-color: #ddd;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      h2 {
+        font-size: 1.3rem;
+      }
+
+      .img-container img {
+        max-height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <header>
+    <h1>Museum Asmat - Taman Mini Indonesia Indah</h1>
+  </header>
+
+  <div style="text-align:center; margin: 1rem 0;">
+    <a href="tmii.html#kunjung" style="background-color:#0b3d91; color:white; padding:10px 20px; border-radius:8px; text-decoration:none; font-weight:bold;">
+      ← Kembali ke Halaman Utama
+    </a>
+  </div>
+
+  <main>
+    <section>
+      <h2>Gambaran Umum</h2>
+      <div class="img-container">
+        <img src="/FAHADARA PROJECT/assets/img/museum asmat.jpg" alt="Museum Asmat di TMII" />
+      </div>
+      <p>Museum Asmat di Taman Mini Indonesia Indah adalah pusat pelestarian dan promosi budaya Asmat yang kaya. Museum ini menampilkan berbagai koleksi seni, kerajinan tangan, dan artefak budaya yang mencerminkan kehidupan masyarakat Asmat. Melalui museum ini, pengunjung dapat memahami lebih dalam tentang tradisi, seni, dan cara hidup masyarakat Asmat yang unik.</p>
+      <p>Lokasi museum yang strategis di TMII memudahkan pengunjung untuk mengakses dan merasakan atmosfer budaya Asmat tanpa harus melakukan perjalanan jauh ke Papua. Museum ini berfungsi sebagai destinasi wisata dan pusat edukasi yang menghubungkan masa lalu dan masa kini budaya Indonesia.</p>
+      <p>Dalam pengelolaannya, museum ini didukung oleh pemerintah daerah dan komunitas budaya setempat untuk memastikan bahwa setiap detail yang ditampilkan adalah representasi yang akurat dan menghormati nilai-nilai luhur masyarakat Asmat.</p>
+    </section>
+
+    <section>
+      <h2>Arsitektur dan Simbolisme</h2>
+      <div class="img-container">
+        <img src="/FAHADARA PROJECT/assets/img/arsitektur asmat.jpg" alt="Arsitektur Museum Asmat" />
+      </div>
+      <p>Arsitektur Museum Asmat mencerminkan gaya tradisional masyarakat Asmat, dengan penggunaan bahan alami seperti kayu dan bambu. Bangunan ini dirancang untuk menciptakan suasana yang harmonis dengan lingkungan sekitar, serta mencerminkan kearifan lokal dalam membangun tempat tinggal yang berkelanjutan.</p>
+      <p>Elemen-elemen dekoratif yang menghiasi museum memiliki makna simbolis yang mendalam, seringkali berkaitan dengan mitologi dan kepercayaan masyarakat Asmat. Motif yang digunakan menggambarkan hubungan antara manusia dan alam, serta nilai-nilai spiritual yang dijunjung tinggi oleh masyarakat.</p>
+    </section>
+
+    <section>
+      <h2>Koleksi Budaya dan Warisan Sejarah</h2>
+      <div class="img-container">
+        <img src="/FAHADARA PROJECT/assets/img/peninggalan asmat.jpg" alt="Koleksi budaya Asmat di Museum" />
+      </div>
+      <p>Di Museum Asmat, pengunjung dapat menemukan berbagai koleksi benda budaya yang menggambarkan kehidupan masyarakat Asmat. Terdapat patung-patung kayu, alat musik tradisional, dan peralatan sehari-hari yang digunakan oleh masyarakat. Setiap koleksi memiliki cerita dan makna yang mendalam, mencerminkan tradisi dan nilai-nilai yang dijunjung oleh masyarakat Asmat.</p>
+      <p>Dokumentasi sejarah, seperti foto-foto dan artefak lainnya, juga menjadi bagian dari koleksi, yang membantu pengunjung memahami perkembangan sosial dan budaya di Asmat dari masa ke masa. Semua koleksi disertai dengan penjelasan naratif agar pengunjung mendapatkan pengalaman edukatif yang menyeluruh.</p>
+    </section>
+
+    <section>
+      <h2>Tradisi dan Kesenian Lokal</h2>
+      <div class="img-container">
+        <img src="/FAHADARA PROJECT/assets/img/seni budaya asmat.jpg" alt="Pertunjukan seni tradisional Asmat" />
+      </div>
+      <p>Museum Asmat juga dikenal karena pertunjukan seni tradisional yang rutin diadakan untuk menarik minat wisatawan dan melestarikan budaya. Tari Perang dan Tari Asmat merupakan beberapa contoh kesenian yang dipertunjukkan secara berkala. Pertunjukan ini tidak hanya menghibur, tetapi juga mendidik pengunjung tentang nilai-nilai budaya Asmat.</p>
+      <p>Pengunjung juga dapat berpartisipasi dalam workshop untuk belajar membuat kerajinan tangan tradisional atau mencoba alat musik khas Asmat, memberikan pengalaman langsung yang mendalam tentang budaya mereka.</p>
+    </section>
+
+    <section>
+      <h2>Wisata Alam dan Kuliner Khas Asmat</h2>
+      <div class="img-container">
+        <img src="/FAHADARA PROJECT/assets/img/papeda asmat.jpg" alt="Kuliner khas Asmat" />
+      </div>
+      <p>Selain budaya dan seni, Museum Asmat juga menghadirkan informasi tentang wisata alam dan kuliner khas dari daerah tersebut. Makanan tradisional seperti Ikan Bakar Asmat dan Sagu dapat dinikmati oleh pengunjung di area kuliner yang tersedia. Rasa unik dan khas dari kuliner Asmat menjadi daya tarik tersendiri bagi pengunjung.</p>
+      <p>Pameran wisata alam juga menyuguhkan informasi tentang keindahan alam Asmat, seperti hutan mangrove dan sungai-sungai yang menjadi habitat berbagai spesies. Informasi ini diharapkan dapat mendorong pengunjung untuk berkunjung langsung ke Asmat dan mendukung perkembangan pariwisata di sana.</p>
+    </section>
+
+    <section>
+      <h2>Kesimpulan</h2>
+      <p>Museum Asmat di TMII bukan hanya sebuah tempat pameran biasa, melainkan sebuah pusat budaya yang hidup dan berfungsi sebagai jembatan antara masyarakat Asmat dan seluruh Indonesia. Dengan arsitektur yang indah, koleksi budaya yang kaya, kesenian yang memukau, serta sajian kuliner khas, museum ini mampu memberikan pengalaman yang autentik dan mendalam tentang budaya Asmat.</p>
+      <p>Peran museum ini sangat penting dalam menjaga dan melestarikan warisan budaya, sekaligus mendorong pariwisata yang berkelanjutan dan meningkatkan kebanggaan masyarakat Asmat terhadap identitas mereka. Bagi pengunjung, Museum Asmat adalah pintu gerbang untuk memahami dan mengapresiasi kekayaan budaya Indonesia yang luar biasa.</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Taman Mini Indonesia Indah - Museum Asmat
+  </footer>
+
+</body>
+</html>

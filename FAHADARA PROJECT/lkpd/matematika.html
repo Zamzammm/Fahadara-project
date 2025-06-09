@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>LKPD Matematika - Ratasya Andhini</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f4faff;
+      color: #002060;
+      line-height: 1.7;
+    }
+    .header {
+      background-color: #e4f2ff;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      color: #003399;
+    }
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+    .button-back {
+      background-color: #0047ab;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      display: inline-block;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+    h2, h3 {
+      color: #003366;
+    }
+    .info p {
+      margin: 5px 0;
+    }
+    .box {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 15px 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      margin-top: 10px;
+    }
+    .persamaan {
+      font-family: monospace;
+      background-color: #eef6ff;
+      padding: 10px;
+      border-radius: 6px;
+      margin: 10px 0;
+      display: inline-block;
+    }
+    .image-slot {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    LKPD Matematika - Projek Asesmen Akhir Semester
+  </div>
+
+  <div class="container">
+    <a href="/FAHADARA PROJECT/index.html" class="button-back">← Kembali ke Halaman Utama</a>
+
+    <!-- Slot untuk Foto -->
+    <img src="/FAHADARA PROJECT/assets/img/ruang rias 2.jpg" alt="Gambar Ruangan Rias" class="image-slot">
+
+    <h2>Deskripsi Konteks</h2>
+    <div class="box">
+      <p>Outing class kali ini menggabungkan eksplorasi budaya dan matematika di ruang rias Anjungan Jawa Timur. Sambil memahami tata ruang budaya, kita juga belajar menghitung luas ruangan.</p>
+    </div>
+
+    <h2>Masalah Matematika</h2>
+    <div class="box">
+      <p>Ruang rias berbentuk persegi panjang seluas <strong>12 m²</strong>, dengan panjang 1 meter lebih besar dari lebarnya. Berapa panjang dan lebar ruangan tersebut?</p>
+    </div>
+
+    <h2>Pemodelan</h2>
+    <div class="box">
+      <p>Misalkan lebar ruangan = <strong>x</strong>, maka panjang = <strong>x + 1</strong></p>
+      <div class="persamaan">L = p × l = x(x + 1) = 12</div>
+      <div class="persamaan">x² + x - 12 = 0</div>
+    </div>
+
+    <h2>Penyelesaian</h2>
+
+    <h3>a. Metode Faktorisasi</h3>
+    <div class="box">
+      <p>Langkah 1: Tentukan persamaan kuadrat:</p>
+      <div class="persamaan">x² + x - 12 = 0</div>
+
+      <p>Langkah 2: Cari dua angka yang hasil kalinya -12 dan jumlahnya 1 (koefisien x).</p>
+      <p>Kita dapat: 4 × (-3) = -12 dan 4 + (-3) = 1</p>
+
+      <p>Langkah 3: Faktorkan:</p>
+      <div class="persamaan">(x + 4)(x - 3) = 0</div>
+
+      <p>Langkah 4: Selesaikan:</p>
+      <div class="persamaan">x = -4 atau x = 3</div>
+      <p>Karena ukuran tidak mungkin negatif, maka x = 3</p>
+      <p><strong>Lebar = 3 m, Panjang = 4 m</strong></p>
+    </div>
+
+    <h3>b. Metode Rumus Kuadrat (ABC)</h3>
+    <div class="box">
+      <p>Persamaan: x² + x - 12 = 0, maka:</p>
+      <p>a = 1, b = 1, c = -12</p>
+
+      <p>Gunakan rumus:</p>
+      <div class="persamaan">x = (-b ± √(b² - 4ac)) / 2a</div>
+
+      <p>Hitung:</p>
+      <div class="persamaan">x = (-1 ± √(1² + 48)) / 2 = (-1 ± √49)/2</div>
+      <div class="persamaan">x = (-1 ± 7)/2</div>
+
+      <p>Hasil:</p>
+      <div class="persamaan">x = 3 atau x = -4</div>
+
+      <p><strong>Lebar = 3 m, Panjang = 4 m</strong></p>
+    </div>
+
+    <h3>c. Metode Melengkapkan Kuadrat</h3>
+    <div class="box">
+      <p>Langkah 1: Pindahkan -12 ke kanan:</p>
+      <div class="persamaan">x² + x = 12</div>
+
+      <p>Langkah 2: Lengkapi kuadrat:</p>
+      <p>Ambil ½ dari koefisien x: (½) = 0.5, kuadratkan = 0.25</p>
+
+      <p>Langkah 3: Tambahkan ke kedua sisi:</p>
+      <div class="persamaan">x² + x + 0.25 = 12 + 0.25</div>
+      <div class="persamaan">(x + 0.5)² = 12.25</div>
+
+      <p>Langkah 4: Akar kuadrat kedua sisi:</p>
+      <div class="persamaan">x + 0.5 = ±√12.25 = ±3.5</div>
+
+      <p>Hasil:</p>
+      <div class="persamaan">x = 3 atau x = -4</div>
+      <p><strong>Lebar = 3 m, Panjang = 4 m</strong></p>
+    </div>
+
+    <h2>d. Analisis Budaya</h2>
+    <div class="box">
+      <p>Ruang rias bukan hanya tempat bersiap, tapi juga ruang transisi sakral. Ukurannya dirancang dengan filosofi harmoni, mencerminkan keteraturan budaya Jawa. Melalui perhitungan luas, kita belajar menghargai ruang secara matematis dan kultural.</p>
+    </div>
+
+    <h2>e. Kesimpulan</h2>
+    <div class="box">
+      <p>Matematika tidak hanya menyelesaikan angka, tetapi juga membantu memahami nilai dan keteraturan dalam budaya. Outing class ini menunjukkan bahwa budaya dan matematika berjalan bersama menciptakan harmoni dalam kehidupan.</p>
+    </div>
+  </div>
+
+</body>
+</html>

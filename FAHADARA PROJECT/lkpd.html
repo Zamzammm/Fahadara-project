@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FAHADARA PROJECT - LKPD</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4faff;
+      color: #002060;
+    }
+
+    .section-title {
+      font-size: 28px;
+      color: #003399;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .section-desc {
+      font-size: 16px;
+      color: #444;
+      margin-bottom: 40px;
+    }
+
+    .lkpd-header, .qr-section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .lkpd-container {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .lkpd-grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .lkpd-card {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      overflow: hidden;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .lkpd-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .lkpd-card h3 {
+      font-size: 20px;
+      margin: 10px 0 5px;
+    }
+
+    .lkpd-card p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .btn-lkpd {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #0047ab;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-lkpd:hover {
+      background-color: #002f7f;
+    }
+
+    .qr-section {
+      background-color: #e4f2ff;
+    }
+
+    .qr-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .qr-grid img {
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="lkpd-header">
+    <h2 class="section-title">Lembar Kerja Peserta Didik (LKPD)</h2>
+    <p class="section-desc">
+      Berikut adalah kumpulan LKPD dari seluruh mata pelajaran yang telah dikerjakan selama projek Outing Class ke TMII.
+    </p>
+  </section>
+
+  <section class="lkpd-container">
+    <div class="lkpd-grid">
+      <div class="lkpd-card">
+        <h3>Matematika</h3>
+        <p>Menghitung luas ruang rias Anjungan Jawa Timur dengan tiga metode kuadrat.</p>
+        <a href="lkpd/matematika.html" class="btn-lkpd">Lihat LKPD</a>
+      </div>
+
+      <div class="lkpd-card">
+        <h3>PAI</h3>
+        <p>Simbol Islam dalam budaya NTB dan sejarah Sunan Ampel di Jawa Timur.</p>
+        <a href="lkpd/pai.html" class="btn-lkpd">Lihat LKPD</a>
+      </div>
+
+      <div class="lkpd-card">
+        <h3>PPKN & Mulok</h3>
+        <p>Analisis budaya daerah dan pelestarian oleh generasi muda.</p>
+        <a href="lkpd/pp-mulok.html" class="btn-lkpd">Lihat LKPD</a>
+      </div>
+
+      <div class="lkpd-card">
+        <h3>IPAS</h3>
+        <p>Pengamatan perilaku ekonomi dan kebutuhan dasar saat outing.</p>
+        <a href="lkpd/ipas.html" class="btn-lkpd">Lihat LKPD</a>
+      </div>
+
+      <div class="lkpd-card">
+        <h3>Informatika</h3>
+        <p>Website dan infografis digital sebagai wujud literasi digital kelompok.</p>
+        <a href="lkpd/informatika.html" class="btn-lkpd">Lihat LKPD</a>
+      </div>
+
+      <div class="lkpd-card">
+        <h3>Sejarah & PJOK</h3>
+        <p>Memahami sejarah TMII dan kaitannya dengan aktivitas fisik budaya.</p>
+        <a href="lkpd/sejarah-pjok.html" class="btn-lkpd">Lihat LKPD</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="qr-section">
+    <h2 class="section-title">Scan QR Code LKPD</h2>
+    <p class="section-desc">Gunakan QR Code berikut untuk mengakses LKPD secara langsung di perangkatmu:</p>
+
+    <div class="qr-grid">
+      <img src="/FAHADARA PROJECT//assets/img/LKPD-IPAS-HAIKAL-ZH__200x200.png" alt="QR LKPD 1">
+      <img src="/FAHADARA PROJECT/assets/img/LKPD-Matematika__500x500.png" alt="QR LKPD 2">
+      <img src="/FAHADARA PROJECT/assets/img/LKPD-PAI__500x500.png" alt="QR LKPD 3">
+      <img src="/FAHADARA PROJECT/assets/img/LKPD-PPKN-dan-MULOK__500x500.png" alt="QR LKPD 4">
+      <img src="/FAHADARA PROJECT/assets/img/LKPD-Seni-Musik-2__500x500.png" alt="QR LKPD 5">
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galeri Alat Musik Indonesia</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #fdfdfd, #eef3ff);
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      padding: 30px 20px 10px;
+      font-size: 2rem;
+      color: #1d3557;
+    }
+
+    header {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    header a.back-button {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #1d3557;
+      border: 1px solid #1d3557;
+      padding: 6px 14px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    header a.back-button:hover {
+      background-color: #1d3557;
+      color: white;
+    }
+
+    nav {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .menu-button {
+      background-color: #ffffff;
+      border: 2px solid #1d3557;
+      color: #1d3557;
+      padding: 10px 20px;
+      margin: 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .menu-button.active,
+    .menu-button:hover {
+      background-color: #1d3557;
+      color: white;
+    }
+
+    .grid-container {
+      display: none;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      padding: 30px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .grid-container.active {
+      display: grid;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 18px;
+    }
+
+    .card h2 {
+      font-size: 1.2rem;
+      margin: 0 0 10px;
+      color: #2a4365;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Sejarah Perjalanan Edukasi TMII</h1>
+  <a href="/FAHADARA PROJECT/index.html" class="back-button">← Kembali ke Halaman Utama</a>
+</header>
+
+<h1>🎶 Galeri Alat Musik Tradisional Indonesia 🎶</h1>
+
+<nav>
+  <button class="menu-button active" onclick="showGallery(event, 'jatim')">Jawa Timur</button>
+  <button class="menu-button" onclick="showGallery(event, 'ntb')">Nusa Tenggara Barat</button>
+  <button class="menu-button" onclick="showGallery(event, 'asmat')">Museum Asmat</button>
+</nav>
+
+<!-- GALERI JAWA TIMUR -->
+<div id="jatim" class="grid-container active">
+  <div class="card">
+    <img src="/FAHADARA PROJECT/assets/img/gamelan jatim.jpg" alt="Gamelan Jawa Timur">
+    <div class="card-content">
+      <h2>Gamelan Jawa Timur</h2>
+      <p>Iramanya cepat dan digunakan dalam pertunjukan Reog, Ludruk, dan lainnya.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="/FAHADARA PROJECT/assets/img/gong jatim.jpg" alt="Gong">
+    <div class="card-content">
+      <h2>Gong</h2>
+      <p>Digunakan sebagai penanda akhir irama, suaranya dalam dan bergema.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="/FAHADARA PROJECT/assets/img/gendang jatim.jpg" alt="Gendang">
+    <div class="card-content">
+      <h2>Gendang</h2>
+      <p>Pengatur ritme utama dalam gamelan, dimainkan dengan tangan.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="/FAHADARA PROJECT/assets/img/rebab jatim.jpg" alt="Rebab">
+    <div class="card-content">
+      <h2>Rebab</h2>
+      <p>Alat gesek bernada lembut yang memberi warna pada melodi.</p>
+    </div>
+  </div>
+</div>
+
+<!-- GALERI NTB -->
+<div id="ntb" class="grid-container">
+  <div class="card">
+    <img src="/FAHADARA PROJECT/assets/img/seronee.jpg" alt="Saroné NTB">
+    <div class="card-content">
+      <h2>Saroné</h2>
+      <p>Alat tiup tradisional suku Sasak, biasanya dimainkan dalam upacara adat.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="/FAHADARA PROJECT/assets/img/genggong.jpg" alt="Genggong">
+    <div class="card-content">
+      <h2>Genggong</h2>
+      <p>Alat musik petik yang menghasilkan suara unik, khas Lombok.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="/FAHADARA PROJECT/assets/img/gendang beleq.jpg" alt="Gendang Beleq">
+    <div class="card-content">
+      <h2>Gendang Beleq</h2>
+      <p>Gendang besar yang dibawa dan dimainkan sambil berjalan dalam iring-iringan.</p>
+    </div>
+  </div>
+</div>
+
+<!-- GALERI ASMAT -->
+<div id="asmat" class="grid-container">
+  <div class="card">
+    <img src="/FAHADARA PROJECT/assets/img/tifa papua.jpg" alt="Tifa Asmat">
+    <div class="card-content">
+      <h2>Tifa</h2>
+      <p>Alat musik pukul berbentuk tabung khas Papua, terbuat dari kayu dan kulit hewan.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="/FAHADARA PROJECT/assets/img/kerang asmat.jpg" alt="Kerang Tiup">
+    <div class="card-content">
+      <h2>Kerang Tiup</h2>
+      <p>Digunakan sebagai alat komunikasi dan dalam ritual suku Asmat.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  function showGallery(event, id) {
+    const galleries = document.querySelectorAll(".grid-container");
+    galleries.forEach(g => g.classList.remove("active"));
+
+    const buttons = document.querySelectorAll(".menu-button");
+    buttons.forEach(b => b.classList.remove("active"));
+
+    document.getElementById(id).classList.add("active");
+    event.target.classList.add("active");
+  }
+</script>
+
+</body>
+</html>
